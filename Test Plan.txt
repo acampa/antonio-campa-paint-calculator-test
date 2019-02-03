@@ -1,0 +1,59 @@
+TEST PLAN  
+
+Antonio Campa  [acampa2@gmail.com] 
+Abstract This document provides an overview of the project and the product test strategy, a list of testing deliverables and plan for development
+
+INTRODUCTION 
+This Test Plan is designed to prescribe the scope, approach, resources, and schedule of all testing activities of the project paint calculator.  The plan identify the items to be tested, the features to be tested, the types of testing to be performed, the personnel responsible for testing, the resources and schedule required to complete testing, and the risks associated with the plan. 
+
+TEST STRATEGY 
+Feature to be tested 
+Number of rooms:
+User can enter any number of room that is greater than 0.
+
+Dimension for each room:
+user must enter and submit length, width, and height of each room. the number must be greater than 0. 
+
+Results:
+Page should display the amount to paint for each room in feet. It will also display the number of gallons of paint required for each room. The total amount of paint in gallons for all rooms is displayed. User also has the option to return to the home page. 
+
+Feature not to be tested These feature are not be tested because they are not included in the software requirement specs
+- Hardware Interfaces 
+- Database logical 
+- Website Security and Performance 
+- Perforamance
+
+Test Type 
+
+In the project , there’re 1 type of testing should be conducted. 
+- Feature testing
+
+TEST OBJECTIVE 
+
+The test objectives are to verify the Functionality of website, the project should focus on testing the calculator operation such as number of rooms, different sized rooms, results, number of gallons required, total number of gallons required…etc. to guarantee all these operation can work normally in real business environment.
+
+TEST CRITERIA 
+
+Exit Criteria 
+Specifies the criteria that denote a successful completion of a test phase 
+- Run rate is mandatory to be 100% unless a clear reason is given.  
+- Pass rate is 100%, achieving the pass rate is mandatory. 
+
+
+TEST DELIVERABLES 
+
+Before testing phase 
+- Test plans document.  
+- Test cases documents 
+- Test Design specifications. 
+During the testing  
+- Test Tool 
+- Simulators.  
+- Test Data 
+- Test Trace-ability Matrix 
+- Error logs and execution logs. 
+After the testing cycles is over 
+- Test Results/reports 
+- Defect Report 
+- Installation/ Test procedures guidelines 
+- Release notes 
