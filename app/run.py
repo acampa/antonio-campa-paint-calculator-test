@@ -50,8 +50,10 @@ def calculate_feet(formatted_data):
     Calculate the number of feet required to paint the surface area of a single room
     :param formatted_data: dict of L/W/H information
     :return: integer for the number of feet required by performing `((Length * 2) + (Width * 2)) * Height`
+	    return int(formatted_data['length']) * int(formatted_data['width']) * int(formatted_data['height'])
+
     """
-    return int(formatted_data['length']) * int(formatted_data['width']) * int(formatted_data['height'])
+    return int((formatted_data['length']) * 2 + int(formatted_data['width']) * 2) * int(formatted_data['height'])
 
 
 def calculate_gallons_required(formatted_data):
@@ -60,9 +62,11 @@ def calculate_gallons_required(formatted_data):
     :param formatted_data: An integer for the number of feet required to paint
     :return: feet / paint coverage, rounded up
     """
-    return math.floor(formatted_data['ft'] / 350)
-
-
+    if formatted_data['ft'] <= 400:
+      return math.ceil(formatted_data['ft'] / 400)
+    else:
+      return math.ceil(formatted_data['ft'] / 350)
+	  
 def sanitize_input(input):
     """
     This universe doesn't allow for negative numbers of rooms or feet
