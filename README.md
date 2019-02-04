@@ -47,3 +47,8 @@ To make it easier on everybody, it's best if we use a PR to diff what work was c
 ## Running Tests
 
 Write instructions for how a user executes the automated tests you created.
+To Run the Automation Tests pull the this repo anf open the PaintCalulatorAutomationTests in your favorite IDE tool. Run the "ResultsPageTest.java" 
+
+Fixed bugs in the paint-calculator:
+1. Dimensions were being calculated incorrectly.
+2. Gallons Required were being calculated incorrectly when feet amount is less than or equal to 400ft
